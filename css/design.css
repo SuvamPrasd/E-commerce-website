@@ -1,0 +1,74 @@
+#content{
+    min-height: 600px;
+    margin-top: 150px;
+    padding-bottom: 20px;
+    min-height: 600px;
+}
+
+#banner_image {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg_1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#banner_content {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 660px;
+}
+
+#item_list {
+    padding-top: 50px;
+}
+
+/*This code ensures that when we navigate to a particular section of a page, the section does not get lost behind the header*/
+#cameras:before, #watches:before, #shirts:before{
+    display: block; 
+    content: " "; 
+    margin-top: -85px; 
+    height: 85px; 
+    visibility: hidden;
+}
+
+#about_style{
+	margin-top: 130px;
+	margin-bottom: 120px;
+}
+.panel-heading{
+	background-color: rgba(0,0,0,0.9);
+	color: #ffffff;
+	font-weight: bolder;
+}
+.btn-primary{
+	background-color: #000000;
+	border: 1px solid #000000;
+}
+.panel-default>.panel-heading{
+	color: #ffffff;
+	background-color: #000000;
+}
+#panel_heading{
+	background-color: #000000;
+	border-color: #000000;
+}
+footer{
+	padding: 10px 0;
+    background-color: #000000;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+}
+@media(max-width:768px) {
+    #banner_content {
+        padding-bottom: 15%;
+    }
+    footer{
+        text-align:left;
+    }
+}
